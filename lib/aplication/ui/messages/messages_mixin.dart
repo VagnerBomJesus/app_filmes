@@ -9,8 +9,7 @@ mixin MessagesMixin on GetxController {
           model.title,
           model.message,
           backgroundColor: model.type.color(),
-          /*backgroundColor:
-              (model.type == MessageType.error ? Colors.red : Colors.blue),*/
+          // backgroundColor:  (model.type == MessageType.error ? Colors.red : Colors.blue),
         );
       }
     });

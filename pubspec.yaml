@@ -41,6 +41,8 @@ dependencies:
   
   # https://pub.dev/packages/flutter_signin_button
   flutter_signin_button: ^2.0.0
+  # https://pub.dev/packages/google_sign_in
+  google_sign_in: ^5.1.0
 
 dev_dependencies:
   flutter_test:
