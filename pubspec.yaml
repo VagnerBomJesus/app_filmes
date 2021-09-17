@@ -32,6 +32,13 @@ dependencies:
   get: #^4.3.8
     git: https://github.com/jonataslaw/getx.git
 
+  # https://pub.dev/packages/firebase_core
+  firebase_core: ^1.6.0
+  # https://pub.dev/packages/firebase_auth
+  firebase_auth: ^3.1.0
+  # https://pub.dev/packages/firebase_remote_config
+  firebase_remote_config: ^0.10.0+5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

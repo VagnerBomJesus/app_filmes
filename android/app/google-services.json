@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "898292085249",
+    "project_id": "dart-week-filmes-app-bj",
+    "storage_bucket": "dart-week-filmes-app-bj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898292085249:android:8a5faeea43989bd0a50600",
+        "android_client_info": {
+          "package_name": "ga.carlossantos.app_filmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898292085249-64133r55soerv9ot76dah1tsiihamh7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ga.carlossantos.app_filmes",
+            "certificate_hash": "e58a7774dddcaa220917a517045bd9d238a6cf00"
+          }
+        },
+        {
+          "client_id": "898292085249-0ofhestvc5mlq87jfvatgq2999ktqdjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_JCIfoTfiMBZ_iPYiFdnRaBnFur4dF3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898292085249-0ofhestvc5mlq87jfvatgq2999ktqdjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
