@@ -10,7 +10,8 @@ class Homepage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.movie), label: 'Filmes'),
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favoritos'),
+          BottomNavigationBarItem(
+              icon: Icon(FilmesAppIcons.heart_empty), label: 'Favoritos'),
           BottomNavigationBarItem(
               icon: Icon(Icons.logout_outlined), label: 'Sair'),
         ],
