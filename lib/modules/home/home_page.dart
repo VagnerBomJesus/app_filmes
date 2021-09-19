@@ -1,3 +1,4 @@
+import 'package:app_filmes/aplication/ui/filmes_app_icons_icons.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -6,8 +7,13 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Home Page"),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.movie), label: 'Filmes'),
+          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Favoritos'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.logout_outlined), label: 'Sair'),
+        ],
       ),
       body: Container(),
     );
