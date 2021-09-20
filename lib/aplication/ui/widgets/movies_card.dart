@@ -20,9 +20,9 @@ class MoviesCard extends StatelessWidget {
                 Material(
                   shadowColor: Colors.green,
                   elevation: 2,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(8),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(8),
                     clipBehavior: Clip.antiAlias,
                     child: Image.network(
                       "https://upload.wikimedia.org/wikipedia/pt/6/63/Joker_%282019%29.jpg",
@@ -33,7 +33,7 @@ class MoviesCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Text(
                   "Homem Aranha ",

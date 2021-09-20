@@ -11,9 +11,11 @@ class MoviesGroup extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 10),
+        SizedBox(height: 20),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 8.0,
+          ),
           child: Text(
             title,
             style: TextStyle(
