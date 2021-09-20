@@ -1,5 +1,3 @@
-import 'package:app_filmes/modules/splash/splash_controller.dart';
-import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

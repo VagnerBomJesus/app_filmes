@@ -5,31 +5,35 @@ mixin MessagesMixin on GetxController {
   void messagesListener(Rxn<MessageModel> message) {
     ever<MessageModel?>(message, (model) {
       if (model != null) {
-        /* Get.snackbar(
+        Get.snackbar(
           model.title,
           model.message,
           backgroundColor: model.type.color(),
+          duration: Duration(seconds: 3),
           // backgroundColor:  (model.type == MessageType.error ? Colors.red : Colors.blue),
-        );*/
+        ); /*
         Get.snackbar(
           '',
           '',
+          duration: Duration(seconds: 3),
           backgroundColor: model.type.color(),
           titleText: Text(
             model.title,
             style: TextStyle(
-                color: Colors.white, fontSize: 17, fontWeight: FontWeight.bold),
+                color: Colors.white70,
+                fontSize: 17,
+                fontWeight: FontWeight.bold),
           ),
           messageText: Text(
             model.message,
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.white30,
               fontWeight: FontWeight.w100,
-              fontSize: 30,
+              //fontSize: 15,
             ),
           ),
           //icon: Icon(Icons.access_alarm_rounded),
-        );
+        );*/
       }
     });
   }
