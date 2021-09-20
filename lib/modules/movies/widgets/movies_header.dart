@@ -7,7 +7,7 @@ class MoviesHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: Get.width,
+      width: Get.width * .1,
       height: 188,
       child: Stack(
         alignment: Alignment.bottomCenter,
@@ -21,7 +21,7 @@ class MoviesHeader extends StatelessWidget {
           ),
           Container(
             width: Get.width * .9,
-            padding: EdgeInsets.only(bottom: 20),
+            padding: EdgeInsets.only(bottom: 20, left: 20, right: 20),
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(

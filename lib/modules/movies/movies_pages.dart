@@ -1,3 +1,4 @@
+import 'package:app_filmes/modules/movies/widgets/movies_filters.dart';
 import 'package:app_filmes/modules/movies/widgets/movies_header.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,6 +15,7 @@ class MoviesPage extends StatelessWidget {
           //for (int i = 0; i < 6; i++) Center(child: Text("data")),
 
           MoviesHeader(),
+          MoviesFilters(),
         ],
       ),
     );
