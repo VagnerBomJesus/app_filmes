@@ -4,6 +4,7 @@ import 'package:app_filmes/models/movies_model.dart';
 import 'package:app_filmes/services/genres/genres_services.dart';
 import 'package:app_filmes/services/movies/movies_services.dart';
 import 'package:get/get.dart';
+import 'package:get/get_rx/src/rx_types/rx_types.dart';
 
 class MoviesController extends GetxController with MessagesMixin {
   final GenresServices _genresServices;
@@ -17,6 +18,8 @@ class MoviesController extends GetxController with MessagesMixin {
 
   var _popularMoviesOriginal = <MovieModel>[];
   var _topRatedMoviesOriginal = <MovieModel>[];
+
+  final genreSelected = Rxn<GenereModel>();
 
   MoviesController({
     required GenresServices genresService,
@@ -59,6 +62,28 @@ class MoviesController extends GetxController with MessagesMixin {
       });
       var newTopRatedMovies = _topRatedMoviesOriginal.where((movie) {
         return movie.title.toLowerCase().contains(title.toLowerCase());
+      });
+
+      popularMovies.assignAll(newPopularMovies);
+      topRatedMovies.assignAll(newTopRatedMovies);
+    } else {
+      popularMovies.assignAll(_popularMoviesOriginal);
+      topRatedMovies.assignAll(_topRatedMoviesOriginal);
+    }
+  }
+
+  void filterMoviesByGenre(GenereModel? genreModel) {
+    if (genreModel?.id == genreSelected.value?.id) {
+      genreModel = null;
+    }
+    genreSelected.value = genreModel;
+
+    if (genreModel != null) {
+      var newPopularMovies = _popularMoviesOriginal.where((movie) {
+        return movie.genres.contains(genreModel?.id);
+      });
+      var newTopRatedMovies = _topRatedMoviesOriginal.where((movie) {
+        return movie.genres.contains(genreModel?.id);
       });
 
       popularMovies.assignAll(newPopularMovies);
