@@ -1,8 +1,13 @@
 import 'package:app_filmes/aplication/ui/filmes_app_icons_icons.dart';
+import 'package:app_filmes/models/movies_model.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class MoviesCard extends StatelessWidget {
-  const MoviesCard({Key? key}) : super(key: key);
+  final dateformt = DateFormat('y');
+  final MovieModel movie;
+
+  MoviesCard({Key? key, required this.movie}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +30,7 @@ class MoviesCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                     clipBehavior: Clip.antiAlias,
                     child: Image.network(
-                      "https://upload.wikimedia.org/wikipedia/pt/6/63/Joker_%282019%29.jpg",
+                      movie.posterPath,
                       height: 184,
                       width: 148,
                       fit: BoxFit.cover,
@@ -36,7 +41,7 @@ class MoviesCard extends StatelessWidget {
                   height: 10,
                 ),
                 Text(
-                  "Homem Aranha ",
+                  movie.title,
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 12,
@@ -45,7 +50,10 @@ class MoviesCard extends StatelessWidget {
                   maxLines: 2,
                 ),
                 Text(
-                  "2020",
+                  // movie.releaseDate,
+                  dateformt.format(
+                    DateTime.parse(movie.releaseDate),
+                  ),
                   style: TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.w300,
