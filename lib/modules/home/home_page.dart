@@ -2,6 +2,7 @@ import 'package:app_filmes/aplication/ui/filmes_app_icons_icons.dart';
 import 'package:app_filmes/aplication/ui/theme_extencions.dart';
 import 'package:app_filmes/modules/favorites/favorites_page.dart';
 import 'package:app_filmes/modules/home/home_controller.dart';
+import 'package:app_filmes/modules/movies/movies_bingings.dart';
 import 'package:app_filmes/modules/movies/movies_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -35,6 +36,7 @@ class Homepage extends GetView<HomeController> {
             return GetPageRoute(
               settings: settings,
               page: () => MoviesPage(),
+              binding: MoviesBingings(),
             );
           }
 
