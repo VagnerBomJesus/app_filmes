@@ -80,7 +80,7 @@ class MoviesRepositoryImpl implements MoviesRepository {
         'api_key': RemoteConfig.instance.getString('api_token'),
         'language': 'pt-PT',
         'append_to_response': 'images,credits',
-        'include_image_language': 'en,pt-PT',
+        'include_image_language': 'en,pt-PT,es,fr',
       },
       decoder: (data) {
         return MovieDetailModel.fromMap(data);
