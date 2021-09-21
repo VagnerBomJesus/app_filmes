@@ -16,7 +16,7 @@ class GeneresRepositoryImpl implements GeneresRepository {
       'api_key': RemoteConfig.instance.getString(
         'api_token',
       ), //Token da api movies guardada no faribase RemoteConfig/
-      'language': 'pt-PT'
+      'language': 'pt-PT',
     }, decoder: (data) {
       final resultData = data['genres'];
       if (resultData != null) {

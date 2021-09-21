@@ -45,9 +45,11 @@ class MoviesRepositoryImpl implements MoviesRepository {
     final result = await _restClient.get<List<MovieModel>>(
       '/movie/top_rated',
       query: {
-        'api_key': RemoteConfig.instance.getString('api_token'),
+        'api_key': RemoteConfig.instance.getString(
+          'api_token',
+        ),
         'language': 'pt-PT',
-        'page': '1',
+        'page': '2',
       },
       decoder: (data) {
         final dataResult = data['results'];
