@@ -1,3 +1,4 @@
+import 'package:app_filmes/modules/movie_detail/widgt/movie_detail_cotent.dart';
 import 'package:app_filmes/modules/movie_detail/widgt/movie_detail_header.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
@@ -14,11 +15,14 @@ class MovieDetailPage extends GetView<MovieDetailController> {
       ),
       body: SingleChildScrollView(
         child: Obx(() {
+          paddingAll(10);
           return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               MovieDetailHeader(
                 movie: controller.movie.value,
               ),
+              MovieDetailCotent(movie: controller.movie.value),
             ],
           );
         }),
