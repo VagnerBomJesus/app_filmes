@@ -1,16 +1,40 @@
-# app_filmes
+<h1 align="center">App Filmes Favorites</h1>
 
-A new Flutter project.
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-## Getting Started
+<h1 align="center">
+  <img alt="Filmes" title="Filmes" src="./assets/images/logo.png" width="220px" />
+</h1>
 
-This project is a starting point for a Flutter application.
+## ✨ Tecnologias
 
-A few resources to get you started if this is your first Flutter project:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [Flutter](https://flutter.dev/)
+- [Firebase](https://firebase.google.com/)
+- [API da  Movie Database (TMDB) ](https://www.themoviedb.org/)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 💻 Projeto
+
+Aplicativo foi desenvolvido no evento “Dart Week 4ª edição”, ministrado pelo professor “Rodrigo Rahman” da [Academia do Flutter]( http://academiadoflutter.com.br)
+- [Arquivo da collection do Postman](./assets/Movies.postman_collection.json)
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/uxIIdBQowPYx5KS9nGHS4A/Filmes?node-id=15%3A586). É necessário ter conta no [Figma](https://www.figma.com/) para acessá-lo.
+
+![layout do Projeto](https://user-images.githubusercontent.com/48354097/134401247-522719ba-a36d-495f-8bbf-197be1542304.png)
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT.
+
+---
+
+
+ 

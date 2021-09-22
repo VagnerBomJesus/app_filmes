@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "b6e37d03-05d9-46f8-9c67-b9ebf013febb",
+		"name": "Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Populares",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/popular?api_key={{API_TOKEN}}&language=pt-br&page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"popular"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "language",
+							"value": "pt-br"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top Rated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/top_rated?api_key={{API_TOKEN}}&language=pt-br&page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"top_rated"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "language",
+							"value": "pt-br"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/436969?api_key={{API_TOKEN}}&language=pt-br&append_to_response=images,credits&include_image_language=en,pt-br",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"436969"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "language",
+							"value": "pt-br"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "append_to_response",
+							"value": "images,credits"
+						},
+						{
+							"key": "include_image_language",
+							"value": "en,pt-br"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/436969/credits?api_key={{API_TOKEN}}&language=pt-br",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"436969",
+						"credits"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "language",
+							"value": "pt-br"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "append_to_response",
+							"value": "images",
+							"disabled": true
+						},
+						{
+							"key": "include_image_language",
+							"value": "en,null",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Images",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/:movieID/images?api_key={{API_TOKEN}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						":movieID",
+						"images"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "language",
+							"value": "pt-br",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "movieID",
+							"value": "436969"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/genre/movie/list?api_key={{API_TOKEN}}&language=pt-br",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"genre",
+						"movie",
+						"list"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "language",
+							"value": "pt-br"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Url Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://image.tmdb.org/t/p/w500/:image",
+					"protocol": "https",
+					"host": [
+						"image",
+						"tmdb",
+						"org"
+					],
+					"path": [
+						"t",
+						"p",
+						"w500",
+						":image"
+					],
+					"variable": [
+						{
+							"key": "image",
+							"value": "euDPyqLnuwaWMHajcU3oZ9uZezR.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
