@@ -18,6 +18,7 @@ class MovieDetailCotent extends StatelessWidget {
         MovieDetailConteatCredits(movie: movie),
         MovieDetailContentProdutionCreditis(movie: movie),
         MovieDetailConteatMainCast(movie: movie),
+        SizedBox(height: 20),
       ],
     );
   }

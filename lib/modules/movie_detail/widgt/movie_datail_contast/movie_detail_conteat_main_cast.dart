@@ -27,6 +27,8 @@ class MovieDetailConteatMainCast extends StatelessWidget {
         Obx(
           () {
             return ExpansionPanelList(
+              elevation: 0,
+              expandedHeaderPadding: EdgeInsets.zero,
               expansionCallback: (panelIndex, isExpanded) {
                 showPanel.toggle();
               },
