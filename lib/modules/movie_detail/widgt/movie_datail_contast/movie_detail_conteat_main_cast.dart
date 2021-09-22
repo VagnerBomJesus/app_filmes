@@ -60,9 +60,9 @@ class MovieDetailConteatMainCast extends StatelessWidget {
                               ))
                           .toList(),
                        */
-                      children: [
-                        MovieCast(cast: movie?.cast?[0]),
-                      ],
+                      children:
+                          movie?.cast.map((c) => MovieCast(cast: c)).toList() ??
+                              [],
                     ),
                   ),
                 ),
