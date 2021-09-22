@@ -50,7 +50,7 @@ class MoviesRepositoryImpl implements MoviesRepository {
           'api_token',
         ),
         'language': 'pt-PT',
-        'page': '2',
+        'page': '1',
       },
       decoder: (data) {
         final dataResult = data['results'];
