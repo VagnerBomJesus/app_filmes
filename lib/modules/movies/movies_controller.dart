@@ -61,7 +61,7 @@ class MoviesController extends GetxController with MessagesMixin {
 
       final favorites = await getFavorites();
 
-      popularMoviesData.map((m) {
+      popularMoviesData = popularMoviesData.map((m) {
         if (favorites.containsKey(m.id)) {
           return m.copyWith(favorite: true);
         } else {
