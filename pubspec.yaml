@@ -47,6 +47,9 @@ dependencies:
   #https://pub.dev/packages/intl
   intl: ^0.17.0
 
+  # https://pub.dev/packages/cloud_firestore
+  cloud_firestore: ^2.5.2
+
   # https://pub.dev/packages/flutter_rating_stars
   flutter_rating_stars: ^1.0.3+4
 

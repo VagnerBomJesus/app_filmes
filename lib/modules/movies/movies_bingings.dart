@@ -9,15 +9,22 @@ class MoviesBingings implements Bindings {
   @override
   void dependencies() {
     Get.lazyPut<GeneresRepository>(
-      () => GeneresRepositoryImpl(restClient: Get.find()),
+      () => GeneresRepositoryImpl(
+        restClient: Get.find(),
+      ),
     );
 
     Get.lazyPut<GenresServices>(
-      () => GenresServicesImpl(generesRepository: Get.find()),
+      () => GenresServicesImpl(
+        generesRepository: Get.find(),
+      ),
     );
-    Get.lazyPut(() => MoviesController(
-          genresService: Get.find(),
-          moviesService: Get.find(),
-        ));
+    Get.lazyPut(
+      () => MoviesController(
+        genresService: Get.find(),
+        moviesService: Get.find(),
+        authService: Get.find(),
+      ),
+    );
   }
 }

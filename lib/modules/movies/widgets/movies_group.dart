@@ -1,10 +1,11 @@
 import 'package:app_filmes/aplication/ui/widgets/movies_card.dart';
 import 'package:app_filmes/models/movies_model.dart';
+import 'package:app_filmes/modules/movies/movies_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class MoviesGroup extends StatelessWidget {
+class MoviesGroup extends GetView<MoviesController> {
   final String title;
   final List<MovieModel> movies;
   const MoviesGroup({
@@ -39,8 +40,10 @@ class MoviesGroup extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: movies.length,
                 itemBuilder: (context, index) {
+                  var movie = movies[index];
                   return MoviesCard(
-                    movie: movies[index],
+                    movie: movie,
+                    favoriteCallback: () => controller.favoriteMovie(movie),
                   );
                 },
               );
