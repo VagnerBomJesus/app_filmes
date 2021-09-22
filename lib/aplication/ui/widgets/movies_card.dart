@@ -4,6 +4,7 @@ import 'package:app_filmes/models/movies_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class MoviesCard extends StatelessWidget {
   final dateformt = DateFormat('y');
@@ -40,10 +41,12 @@ class MoviesCard extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8),
                       clipBehavior: Clip.antiAlias,
-                      child: Image.network(
-                        'https://image.tmdb.org/t/p/w200${movie.posterPath}',
+                      child: FadeInImage.memoryNetwork(
                         height: 184,
                         width: 148,
+                        placeholder: kTransparentImage,
+                        image:
+                            'https://image.tmdb.org/t/p/w200${movie.posterPath}',
                         fit: BoxFit.cover,
                       ),
                     ),
